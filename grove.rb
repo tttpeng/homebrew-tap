@@ -5,21 +5,21 @@
 class Grove < Formula
   desc "Cross-repo git worktree workspace manager (CLI / TUI)"
   homepage "https://github.com/tttpeng/grove"
-  version "0.1.0"
+  version "0.1.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/tttpeng/grove/releases/download/v0.1.0/grove_darwin_amd64.tar.gz"
-      sha256 "a77aac949362895a0bd11bd1db400dc1f03335fbd0dea30f76804856ea6934e9"
+      url "https://github.com/tttpeng/grove/releases/download/v0.1.1/grove_darwin_amd64.tar.gz"
+      sha256 "39521be950a1e3080a9e8fafc7ce2c3b856c71cb161647acee78a85fb3e41b1b"
 
       define_method(:install) do
         bin.install "grove"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/tttpeng/grove/releases/download/v0.1.0/grove_darwin_arm64.tar.gz"
-      sha256 "5e21ed397a1263e623a0ac10450a2f8c6c22371529deb4fcf425eb1930c4aa64"
+      url "https://github.com/tttpeng/grove/releases/download/v0.1.1/grove_darwin_arm64.tar.gz"
+      sha256 "427de5b07c7ffc9fa0650d2d88b3c11442b8a417a43e13f263f20ac909adec2d"
 
       define_method(:install) do
         bin.install "grove"
@@ -29,15 +29,15 @@ class Grove < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/tttpeng/grove/releases/download/v0.1.0/grove_linux_amd64.tar.gz"
-      sha256 "08746d34e5f40049608c987109f3cb25e818656e10c5138408794545fd6ae9b9"
+      url "https://github.com/tttpeng/grove/releases/download/v0.1.1/grove_linux_amd64.tar.gz"
+      sha256 "9ffc28d3e3c41763ea1e182ecd60be9199129f3b3923e3e94886ebfa21b23650"
       define_method(:install) do
         bin.install "grove"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/tttpeng/grove/releases/download/v0.1.0/grove_linux_arm64.tar.gz"
-      sha256 "ac3c540fd0914519051d674a1dd084a309c77e0093c3e5e8e4e3a0a94fef726e"
+      url "https://github.com/tttpeng/grove/releases/download/v0.1.1/grove_linux_arm64.tar.gz"
+      sha256 "2a27db3428408c7c788251debe9f8a66738899b1e55b4fb3cf49393525c462e1"
       define_method(:install) do
         bin.install "grove"
       end
